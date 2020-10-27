@@ -1,3 +1,8 @@
+## 一些坑
+- action 脚本里的 REPO_URL 改成了自己folk的，相对于 lean 的原版把 feed.conf.default 里 helloworld 源的注释去掉了，不然 make menuconfig 时 luci application 列表里不会有 ssr-plus.
+- 这里的 .config 文件仅在在 lean 默认设置上增加了 ssr-plus，可以直接下载 Actions 里已编译好的镜像，如有需要直接编辑 .config 文件，或者按照 lean 的教程执行到 make menuconfig 生成 .config 文件后替换，然后直接 Run Action 即可.
+---
+
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
